@@ -1,0 +1,33 @@
+Algoritmo "Algoritmo de números primos"
+// Disciplina   : [Desenvolvimento Full Stack]
+// Professor   : Andre Przewodowski Filho
+// Descrição   : Mostrar os números primos e a soma deles.
+// Autor(a)    : João Rainier de Castro Carvalho
+// Data atual  : 27/08/2022
+Var
+
+   n, cn, pr, dv, soma : inteiro
+
+Inicio
+
+escreval ("Digite um valor: ")
+leia (n)
+se n <= 0 entao
+escreval ("Valor não pode ser 0!")
+senao
+para pr de 1 ate n faca
+cn <- 0
+para dv de 1 ate pr faca
+se (pr % dv = 0) entao
+cn <- cn + 1
+fimse
+fimpara
+se cn = 2 entao
+escreval ("Os números primos são: ", pr, " ")
+soma <- soma+pr
+fimse
+fimpara
+escreval ("A soma de todos os números primos menores iguais a ", N ," é: ", soma)
+fimse
+
+Fimalgoritmo
